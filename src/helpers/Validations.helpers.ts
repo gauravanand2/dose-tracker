@@ -29,6 +29,12 @@ export const ValidationHelper = {
     errors["email"] = checkEmail(values["email"]);
     errors["password"] = checkPassword(values["password"]);
     return errors;
+  },
+  handleLoginForm : (values : any) => {
+    const errors = {} as any;
+    errors["email"] = checkEmail(values["email"]);
+    errors["password"] = checkPassword(values["password"]);
+    return errors;
   }
 } 
 

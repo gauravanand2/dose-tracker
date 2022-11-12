@@ -17,6 +17,19 @@ export const RegisterFields = [
 ]
 
 
+export const LOGIN_FIELDS = [
+    {
+        name :"email",
+        type: "email",
+        label : "Enter your Email",
+    },
+    {
+        name :"password",
+        type: "password",
+        label : "Enter Your Password",
+    }
+]
+
 export const ERROR_MESSAGE ={
     EMAIL :"Enter Valid Email !",
     PASSWORD :"Enter Valid Password !",

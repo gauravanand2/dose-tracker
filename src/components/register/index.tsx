@@ -1,4 +1,3 @@
-import React from "react";
 import RegisterComp from "./RegisterComp";
 import "./style.scss";
  
