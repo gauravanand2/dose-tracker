@@ -1,0 +1,67 @@
+@import "../../App.scss";
+
+.section.register {
+    .container {
+        width: 300px;
+        margin: auto;
+        margin-top: 150px;
+    }
+    .header {
+        margin-top: 2rem;
+
+        .heading {
+            font-size: 1.8rem;
+            color: $heading-1;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+    }
+
+    .input-form {
+        margin-top: 1rem;
+        .field-details {
+            .label-field {
+                margin-top: 0.8rem;
+                .label {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                }
+            }
+            .all-field{
+                margin-top: 0.5rem;
+                font-size: 0.9rem;
+                color: $text-1;
+                font-weight: 700;
+            }
+            .input-field {
+                margin-top: 0.5rem;
+
+                .input{
+                    padding: 5px;
+                    border:1px solid $border-1 ;
+                    width: 100%;
+                }
+            }
+            .btn-div{
+                margin-top: 1.5rem;
+
+                .register-btn{
+                    background: $background-1;
+                    border: 1px solid $border-2;
+                    padding: 10px 20px;
+                    width: 100px;
+                    font-size: 1rem;
+                    color: #fff;
+                    cursor: pointer;
+
+                    &:hover{
+                        background: $background-hover-1;
+                    }
+                }
+            }
+        }
+    }
+}
