@@ -1,0 +1,19 @@
+@import "../../utils/colors.scss";
+
+
+.section.homepage {
+    
+   .container{
+        margin: 0 auto;
+        max-width: 1250px;
+        padding: 0 1rem;
+
+    .header{
+        margin-top: 1.5rem;
+        .heading{
+            color: $heading-1;
+            text-align: center;
+        }
+    }
+   }
+}

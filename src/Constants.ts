@@ -1,3 +1,5 @@
+export const HEADING ="DOSE TRACKER"
+
 export const RegisterFields = [
     {
         name :"name",
