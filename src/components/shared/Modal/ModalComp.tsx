@@ -13,7 +13,7 @@ const ModalComp = (props: any) => {
                         <label className='label'>Alert time {i + 1}</label>
                     </div>
                     <div className='input-div'>
-                        <Form.Control name={`time${i + 1}`} type="time" placeholder="Time" onChange={e => props?.onChangeValue(e)} />
+                        <Form.Control name={`time${i + 1}`} value={props?.medicineData[`time${i+1}`]}  type="time" placeholder="Time" onChange={e => props?.onChangeValue(e)} />
                     </div>
                 </div>
             )
@@ -33,7 +33,7 @@ const ModalComp = (props: any) => {
                                 <label className='label'>Enter Medicine Name</label>
                             </div>
                             <div className='input-div'>
-                                <Form.Control name="name" type="text" placeholder="Medicine name" onChange={e => props?.onChangeValue(e)} />
+                                <Form.Control name="name" type="text" placeholder="Medicine name" value={props?.medicineData.name} onChange={e => props?.onChangeValue(e)} />
                             </div>
                         </div>
                         <div className='field-div'>
@@ -41,7 +41,7 @@ const ModalComp = (props: any) => {
                                 <label className='label'>Select</label>
                             </div>
                             <div className='input-div'>
-                                <Form.Select name="frequency" aria-label="Default select example" onChange={e => props?.onChangeValue(e)}>
+                                <Form.Select name="frequency" aria-label="Default select example" value={props?.medicineData.frequency} onChange={e => props?.onChangeValue(e)}>
                                     <option>Select frequency</option>
                                     <option value="1">Once a Day</option>
                                     <option value="2">Twice a day</option>
@@ -58,7 +58,7 @@ const ModalComp = (props: any) => {
                                 <label className='label'>Select Quantity</label>
                             </div>
                             <div className='input-div'>
-                                <Form.Control name="quantity" type="number" placeholder="Quantity" onChange={e => props?.onChangeValue(e)} />
+                                <Form.Control name="quantity" type="number" value={props?.medicineData.quantity} placeholder="Quantity" onChange={e => props?.onChangeValue(e)} />
                             </div>
                         </div>
                         {

@@ -1,0 +1,16 @@
+@import "../../../utils/colors.scss";
+
+.modal {
+    .title {
+        color: $heading-1;
+    }
+    .submit-btn {
+        background-color: $background-2;
+        border-color: $border-2;
+
+        &:hover {
+            background-color: $background-1;
+            border-color: $border-1;
+        }
+    }
+}

@@ -5,7 +5,7 @@
         margin: 0 auto;
         max-width: 1250px;
         padding: 0 1rem;
-
+        margin-bottom: 2rem;
         .header {
             margin-top: 1.5rem;
             .heading {
@@ -41,9 +41,78 @@
                     color: #fff;
                     cursor: pointer;
 
-                    &:hover{
+                    &:hover {
                         background: $background-hover-1;
                         border-color: $border-2;
+                    }
+                }
+            }
+        }
+
+        .view-edit {
+            margin-top: 2rem;
+            .heading {
+                color: $heading-1;
+                text-align: center;
+            }
+
+            .row {
+                padding: 1rem;
+                margin-top: 1.5rem;
+                border: 1px solid $border-1;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                border-radius: 1rem;
+
+                @media (max-width:550px) {
+                    grid-template-columns: 1fr;
+
+                }
+                .medicine-details {
+                    .name {
+                        color: $heading-2;
+                        text-transform: capitalize;
+                    }
+
+                    .freq {
+                        color: $text-2;
+                    }
+                }
+                .action-bar {
+                    grid-column-start: none;
+                    @media (max-width:550px) {
+                        grid-column-start: unset;
+                        margin-top: 1rem;
+
+    
+                    }
+                    
+
+                    .button {
+                        padding: 10px 20px;
+                        width: 100px;
+                        font-size: 1rem;
+                        color: #fff;
+                        cursor: pointer;
+
+                        &.edit {
+                            background: $background-1;
+                            border: 1px solid $border-2;
+                            &:hover {
+                                background: $background-hover-1;
+                            }
+                        }
+
+                        &.delete {
+                            margin-left: 2rem;
+                            background-color: $background-2;
+                            border: 1px solid $background-2;
+
+                            &:hover {
+                                background: $background-1;
+                            }
+                        }
                     }
                 }
             }

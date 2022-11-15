@@ -14,6 +14,7 @@ const HomepageComp = () => {
         time3: ''
     });
     const [modalIsOpen, setModalOpen] = useState(false)
+    const [deleteModalIsOpen, setdeleteModalIsOpen] = useState(false)
     const closeModal = () => {
         setModalOpen(false)
     }
@@ -21,7 +22,13 @@ const HomepageComp = () => {
     const openModal = () => {
         setModalOpen(true);
     }
+    const closeDeleteModal = () => {
+        setdeleteModalIsOpen(false)
+    }
 
+    const openDeleteModal = () => {
+        setdeleteModalIsOpen(true);
+    }
     const handleChange = (type: any, value: String) => {
         setMedicineData({
             ...medicineData,
@@ -56,7 +63,9 @@ const HomepageComp = () => {
             setShowEmpty(true)
         }
     }
-
+    const deleteMedicine =() => {
+        closeDeleteModal()
+    }
     return (
         <div className="section homepage">
             <div className="container">
@@ -67,10 +76,22 @@ const HomepageComp = () => {
                     modalIsOpen={modalIsOpen}
                     onChangeValue={onChangeValue}
                     medicineData={medicineData}
-                    showEmpty ={showEmpty}
-                    addMedicine ={addMedicine}
+                    showEmpty={showEmpty}
+                    addMedicine={addMedicine}
                 />
-                <Update />
+                <Update
+                    setMedicineData={setMedicineData}
+                    closeModal={closeModal}
+                    openModal={openModal}
+                    modalIsOpen={modalIsOpen}
+                    onChangeValue={onChangeValue}
+                    medicineData={medicineData}
+                    showEmpty={showEmpty}
+                    openDeleteModal={openDeleteModal}
+                    closeDeleteModal={closeDeleteModal}
+                    deleteMedicine={deleteMedicine}
+                    deleteModalIsOpen={deleteModalIsOpen}
+                />
             </div>
 
         </div>
