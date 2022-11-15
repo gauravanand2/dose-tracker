@@ -1,19 +1,52 @@
 @import "../../utils/colors.scss";
 
-
 .section.homepage {
-    
-   .container{
+    .container {
         margin: 0 auto;
         max-width: 1250px;
         padding: 0 1rem;
 
-    .header{
-        margin-top: 1.5rem;
-        .heading{
-            color: $heading-1;
-            text-align: center;
+        .header {
+            margin-top: 1.5rem;
+            .heading {
+                color: $heading-1;
+                text-align: center;
+            }
+        }
+
+        .middle {
+            margin-top: 2rem;
+            .text {
+                color: $text-1;
+                font-size: 1.2rem;
+            }
+            .step {
+                color: $text-1;
+            }
+            .sub-head {
+                color: $heading-2;
+            }
+
+            .add-medi {
+                margin-top: 2rem;
+                .submit-btn {
+                    margin: auto;
+                    display: block;
+                    background: $background-1;
+                    border: 1px solid $background-hover-1;
+                    padding: 1rem 20px;
+                    width: 200px;
+                    border-radius: 2rem;
+                    font-size: 1rem;
+                    color: #fff;
+                    cursor: pointer;
+
+                    &:hover{
+                        background: $background-hover-1;
+                        border-color: $border-2;
+                    }
+                }
+            }
         }
     }
-   }
 }

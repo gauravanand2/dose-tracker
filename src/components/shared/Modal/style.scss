@@ -1,0 +1,36 @@
+@import "../../../utils/colors.scss";
+
+.modal {
+    .title {
+        color: $heading-1;
+    }
+
+    .form-details {
+        margin-top: -0.7rem;
+        margin-bottom: 1rem;
+        .field-div {
+            .label-div {
+                margin-top: 1rem;
+            }
+            .input-div {
+                margin-top: 0.4rem;
+            }
+        }
+
+        .warning {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: $text-1;
+            font-weight: 700;
+        }
+    }
+    .submit-btn {
+        background-color: $background-1;
+        border-color: $border-2;
+
+        &:hover {
+            background-color: $background-hover-1;
+            border-color: $border-1;
+        }
+    }
+}
